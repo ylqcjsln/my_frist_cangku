@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店铺注册</title>
+    <style>
+        h3.title{
+            color:blue;
+            font-size: 25px;
+            text-indent: 80px;
+        }
+        .first{
+            text-indent: 70px;
+        }
+        table{
+            font-size: 15px;
+            color: #666666;
+            border-spacing: 10px 25px;
+        }
+        input[type="text"]{
+            width:100%;
+            line-height:35px;
+        }
+        input[type="password"]{
+            width:100%;
+            line-height:35px;
+        }
+        input[type="submit"]{
+            width:100%;
+            line-height:35px;
+            background-color: #2F5DF2;
+            color: #FFFFFF;
+        }
+        select{
+            height:40px;
+        }
+        .code{
+            width:30%;
+            line-height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="title">336足浴城优选</h3>
+    <table>
+        <form action="javascript:alert('注册成功')">
+                <tr><td class="first">店铺名称</td><td><input type="text" placeholder="输入您的店铺名称"></td></tr>
+                <tr><td class="first">店铺简介</td><td><input type="text"  placeholder="不多于十个字"></td></tr>
+                <tr>
+                    <td class="first">店铺类型</td>
+                    <td>
+                        <select id="type" nama="shop_type">
+                            <option>玩具</option>
+                            <option>单片机教程</option>
+                            <option>游戏教程</option>
+                            <option>其他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first">账户名称</td>
+                    <td><input tyep="type" placeholder="可由英文数字和下划线组成" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td class="first">账户密码</td>
+                    <td><input type="password" placeholder="输入您的密码"></td>
+                </tr>
+                <tr>
+                    <td class="first">确认密码</td>
+                    <td><input type="password" placeholder="请再次输入您的密码"></td>
+                </tr>
+                <tr>
+                    <td class="first">真实姓名</td>
+                    <td><input type="text" placeholder="申请人的真实姓名"></td>
+                </tr>
+                <tr>
+                    <td class="first">电话</td>
+                    <td><input typte="text" placeholder="输入你的电话号码"></td>
+                </tr>
+                <tr>
+                    <td class="first">短信验证</td>
+                    <td><input type="text" placeholder="输入你的验证码" class="code"></td>
+                    <td><a href="javascript:alert('发送成功')"><u>点击发送验证码</u></td>
+                </tr>
+                <tr>
+                    <td class="first">账号类型：</td>
+                    <td>
+                        <input type="radio" name="name" id="a"><label id="a">个人</label>
+                        <input type="radio" name="name" id="b"><label id="b">企业</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first"><input type="submit" value="确认无误，点击注册" ></td>
+                </tr>
+                <tr>
+                    <td class="first">
+                        <input type="checkbox">我已阅读并同意<a href="https://www.bilibili.com/">《商家注册协议》</a>
+                    </tr>
+                </tr>
+        </form>
+    </table>
+</body>
+</html>
